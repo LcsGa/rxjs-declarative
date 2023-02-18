@@ -1,0 +1,33 @@
+<p-toast></p-toast>
+
+<p-card *ngIf="vm$ | async as vm">
+  <div class="card__content">
+    <button pButton icon="pi pi-refresh" (click)="reset$$.next()"></button>
+
+    <p-table [value]="vm.users" [loading]="vm.loading" [rows]="10">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Nom</th>
+
+          <th>Prénom</th>
+
+          <th>Email</th>
+
+          <th>Age</th>
+        </tr>
+      </ng-template>
+
+      <ng-template pTemplate="body" let-user>
+        <tr>
+          <td>{{ user.lastName | uppercase }}</td>
+
+          <td>{{ user.firstName }}</td>
+
+          <td>{{ user.email | lowercase }}</td>
+
+          <td>{{ user.age }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</p-card>

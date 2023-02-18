@@ -9,6 +9,7 @@
   },
   "private": true,
   "dependencies": {
+    "@anatine/zod-mock": "^3.8.3",
     "@angular/animations": "^15.1.0",
     "@angular/common": "^15.1.0",
     "@angular/compiler": "^15.1.0",
@@ -17,8 +18,12 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "@faker-js/faker": "^7.6.0",
+    "primeicons": "^6.0.1",
+    "primeng": "^15.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "zod": "^3.20.6",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
